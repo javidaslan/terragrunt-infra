@@ -26,7 +26,7 @@ locals {
 
   # Expose the base source URL so different versions of the module can be deployed in different environments. This will
   # be used to construct the terraform block in the child terragrunt configurations.
-  base_source_url = "git::git@github.com:javidaslan/terraform-modules.git//mysql"
+  base_source_url = "git::https://github.com/javidaslan/terraform-modules.git//mysql"
 }
 
 
@@ -36,7 +36,7 @@ locals {
 # environments.
 # ---------------------------------------------------------------------------------------------------------------------
 inputs = {
-  name              = "mysql_${local.env}"
+  name              = "aatlantis_mysql_${local.env}"
   instance_class    = "db.t2.micro"
   allocated_storage = 20
   storage_type      = "standard"
