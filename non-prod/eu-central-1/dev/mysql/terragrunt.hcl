@@ -36,7 +36,7 @@ locals {
 # environments.
 # ---------------------------------------------------------------------------------------------------------------------
 inputs = {
-  name              = "aaaatlantis_mysql_${local.env}"
+  name              = "aaaaatlantis_mysql_${local.env}"
   instance_class    = "db.t2.micro"
   allocated_storage = 20
   storage_type      = "standard"
